@@ -69,7 +69,8 @@ write.csv(mountains, "mountains_data.csv", row.names=FALSE)
 
 **9. Clear your environment panel by clicking on the broom icon. Then read in your `mountains_data.csv` file to a new object called `mountains`.**
 ```{r}
-
+getwd()
+mountains <- read_csv("mountains_data.csv")
 ```
 
 ```{r}
@@ -78,7 +79,7 @@ write.csv(mountains, "mountains_data.csv", row.names=FALSE)
 
 **10. Use a summary function of your choice to show the structure of your `mountains` data frame.**
 ```{r}
-
+str(mountains)
 ```
 
 ## Knit and Upload
